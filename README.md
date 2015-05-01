@@ -1,2 +1,3 @@
 # gflab
-Some experiments in GF
+In this repository are some experiments in GF (Grammatical Framework).
+
