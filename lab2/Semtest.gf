@@ -32,4 +32,3 @@ abstract Semtest = {
     use2pLoveAsAdmire : Love -> Admire ; -- makes possible to use class Love as subclass of Admire
         
 }
-
