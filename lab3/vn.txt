@@ -1,0 +1,345 @@
+VNC_admire_31_2
+
+Members:
+abhor (wn 1)
+admire (fn 1, 2; wn 1; g 1)
+adore (wn 1)
+affirm (fn 1)
+applaud
+appreciate (fn 1; wn 1, 3; g 2)
+bear (g 5)
+believe (fn 1, 2; wn 2; g 1)
+bewail
+cherish (wn 1)
+deify (fn 1)
+deplore (fn 1; wn 1, 2)
+detest (wn 1)
+disbelieve
+distrust (wn 1)
+dread (wn 1)
+envy (wn 1, 2)
+esteem (fn 1; wn 1)
+exalt (fn 1; wn 1; g 1)
+execrate (fn 1; wn 1)
+fancy (wn 2)
+favor (fn 1, 2; wn 3, 4, 1; g 1, 2)
+grudge
+idolize (wn 1)
+lament (wn 2)
+loathe (wn 1)
+miss (wn 2; g 4)
+mistrust (wn 1)
+mourn (fn 1; wn 1; g 1)
+pity (wn 1)
+prefer (fn 1, 2)
+prize (fn 1; wn 1, 3; g 1)
+reaffirm (fn 1; g 1)
+relish (wn 1)
+resent (fn 1; wn 2; g 1)
+respect (fn 1; wn 1; g 1)
+revere (fn 1; wn 1, 2)
+rue (wn 1)
+savor (wn 1; g 1)
+stand (wn 5; g 4)
+suffer (fn 1; wn 3, 6, 8; g 1)
+support (fn 1; wn 1, 3, 11; g 1, 2)
+tolerate (wn 1; g 1)
+treasure (wn 1, 2)
+trust (fn 1, 2; wn 1; g 1)
+value (fn 1; wn 2, 3; g 2)
+venerate (wn 1)
+worship (wn 1, 2; g 1)
+
+Frames:
+NP V NP
+   example	"The tourists admired the paintings."
+   syntax	Experiencer V Stimulus
+   semantics	emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)
+NP V NP PP.attribute
+   example	"I admired him for his honesty."
+   syntax	Experiencer V Stimulus {for} Attribute
+   semantics	emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus, Attribute)
+NP V NP.stimulus
+   example	"I admired the honesty in him."
+   syntax	Experiencer V Stimulus
+   semantics	emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)
+NP V that S
+   example	"The children liked that the clown had a red nose."
+   syntax	Experiencer V Stimulus <+that_comp>
+   semantics	emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)
+NP V S_ING
+   example	"I loved writing."
+   syntax	Experiencer V Stimulus <+be_sc_ing>
+   semantics	emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)
+NP V NP S_ING
+   example	"I loved him writing novels."
+   syntax	Experiencer V Stimulus <+poss_ing>
+   semantics	emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)
+
+VNC_admire_31_2_1
+
+Members:
+despise (wn 1)
+disdain (fn 1; wn 1)
+dislike (wn 1)
+enjoy (wn 1, 3, 5; g 1)
+fear (fn 1; wn 2, 4, 5; g 1, 2, 3)
+hate (fn 1; wn 1; g 1)
+like (wn 2, 3; g 2)
+love (wn 1, 2, 3; g 1)
+regret (fn 1; wn 1, 2, 3, 4; g 1, 2)
+ 
+Frames:
+NP V S_INF
+   example	"I loved to write."
+   syntax	Experiencer V Stimulus <+sc_to_inf>
+   semantics	emotional_state(E, Emotion, Experiencer) in_reaction_to(E, Stimulus)
+   
+
+   
+NP Thematic Roles
+30 unique values / 3144 total uses
+
+Agent (984 uses)
+Asset (24)
+Attribute (40)
+Beneficiary (40)
+Cause (26)
+Co-Agent (34)
+Co-Patient (26)
+Co-Theme (18)
+Destination (84)
+Experiencer (83)
+Extent (6)
+Goal (25)
+Initial_Location (33)
+Instrument (70)
+Location (109)
+Material (22)
+Patient (264)
+Pivot (25)
+Predicate (5)
+Product (24)
+Recipient (137)
+Reflexive (1)
+Result (79)
+Source (55)
+Stimulus (68)
+Theme (661)
+Time (3)
+Topic (184)
+Trajectory (4)
+Value (10)
+
+Selectional Restrictions
+36 unique values / 957 total uses
+
+abstract (8 uses) < SelRestr
+animal (1) < animate < natural < concrete < SelRestr
+animate (307) < natural < concrete < SelRestr
+artifact < phys_obj < concrete < SelRestr
+body_part (12) < animate < natural < concrete < SelRestr
+comestible (12) < phys_obj < concrete < SelRestr
+communication (12) < abstract < SelRestr
+concrete (104) < SelRestr
+currency (5) < SelRestr
+dest (1) < path < spatial
+dest_conf (9) < dest < path < spatial
+dest_dir (17) < dest < path < spatial
+dir (3) < path < spatial
+elongated (2) < pointed < shape < concrete < SelRestr
+force (1) < int_control < concrete < SelRestr
+garment (1) < artifact < phys_obj < concrete < SelRestr
+human (2) < animate < natural < concrete < SelRestr
+int_control (25) < concrete < SelRestr
+loc (57) < spatial
+location (44) < SelRestr
+machine (14) < int_control < concrete < SelRestr ; < artifact < phys_obj < concrete < SelRestr
+nonrigid (1) < rigid < solid < concrete < SelRestr
+object < location?
+organization (153) < SelRestr
+path (27) < spatial
+phys_obj < concrete < SelRestr
+place < location < SelRestr
+plant < natural < concrete < SelRestr
+plural (4)
+pointed < shape < concrete < SelRestr
+pointy (1) == pointed?
+refl (8)
+region (30) < location < SelRestr
+scalar (1) < SelRestr
+solid (19) < concrete < SelRestr
+sound (1) < abstract < SelRestr
+spatial (8)
+src (34) < path < spatial
+state (28) < SelRestr
+substance (2) < concrete < SelRestr
+time (2) < SelRestr
+tool < artifact < phys_obj < concrete < SelRestr
+vehicle (1) < machine < int_control < concrete < SelRestr
+
+
+
+Syntax Restrictions
+40 unique values / 532 total uses
+
+ac_ing (13 uses)
+ac_to_inf (4)
+acc_ing (2)
+adv_loc (11)
+be_sc_ing (9)
+body_part (4)
+definite (8)
+for_comp (5)
+genitive (4)
+how_extract (24)
+np_ing (2)
+np_omit_ing (2)
+np_p_ing (2)
+np_ppart (7)
+np_to_inf (2)
+np_tobe (1)
+oc_bare_inf (1)
+oc_ing (9)
+oc_to_inf (11)
+plural (86)
+pos_ing (1)
+poss_ing (19)
+possing (1)
+quotation (6)
+refl (1)
+rs_to_inf (1)
+sc_ing (19)
+sc_to_inf (13)
+sentential (84)
+small_clause (2)
+tensed_that (5)
+that_comp (53)
+to_be (9)
+to_inf_rs (1)
+vc_to_inf (1)
+wh_comp (19)
+wh_inf (25)
+what_extract (30)
+what_inf (23)
+wheth_inf (12)
+
+
+
+
+% Visual Preposition Class Hierarchy
+% ----------------------------------
+%   spatial
+%    |---> loc
+%    |---> path
+%           |---> dir
+%           |---> src
+%           |---> dest
+%                  |---> dest_conf
+%                  |---> dest_dir
+
+% dynamic spatial prep
+isa(src,path)
+isa(dir,path)
+isa(dest,path)
+isa(dest_conf,dest)
+isa(dest_dir,dest)
+isa(path,spatial)
+isa(loc,spatial)
+
+% src
+isa(from,src)
+isa(out,src)
+isa(out_of,src)
+isa(off,src)
+isa(off_of,src)
+
+% dest_conf
+isa(into,dest_conf)
+isa(onto,dest_conf)
+
+% dest_dir
+isa(for,dest_dir) %only for intrans?
+isa(at,dest_dir)
+isa(to,dest_dir)
+isa(towards,dest_dir)
+
+% dir
+isa(across,dir)
+isa(along,dir)
+isa(around,dir)
+isa(down,dir)
+isa(over,dir)
+isa(past,dir)
+isa(round,dir)
+isa(through,dir)
+isa(towards,dir)
+isa(up,dir)
+
+% loc
+isa(about,loc)
+isa(above,loc)
+isa(against,loc)
+isa(along,loc)
+isa(alongside,loc)
+isa(amid,loc)
+isa(among,loc)
+isa(amongst,loc)
+isa(around,loc)
+isa(astride,loc)
+isa(at,loc)
+isa(athwart,loc)
+isa(before,loc)
+isa(behind,loc)
+isa(below,loc)
+isa(beneath,loc)
+isa(beside,loc)
+isa(between,loc)
+isa(beyond,loc)
+isa(by,loc)
+(?)isa(from,loc)
+isa(in,loc)
+isa(in_front_of,loc)
+isa(inside,loc)
+isa(near,loc)
+isa(next_to,loc)
+isa(off,loc)
+isa(on,loc)
+isa(opposite,loc)
+isa(out_of,loc)
+isa(outside,loc)
+isa(over,loc)
+isa(round,loc)
+isa(throughout,loc)
+isa(under,loc)
+isa(underneath,loc)
+isa(upon,loc)
+isa(within,loc)
+
+
+
+Table 2: Thematic roles and example classes that use them
+Actor:	used for some communication classes (e.g., Chitchat-37.6, Marry-36.2, Meet-36.2) when both arguments can be considered symmetrical (pseudo-agents).
+Agent:	generally a human or an animate subject. Used mostly as a volitional agent, but also used in VerbNet for internally controlled subjects such as forces and machines.
+Asset:	used for the Sum of Money Alternation, present in classes such as Build-26.1, Get-13.5.1, and Obtain-13.5.2 with `currency' as a selectional restriction.
+Attribute:	attribute of Patient/Theme refers to a quality of something that is being changed, as in (The price)att of oil soared. At the moment, we have only one class using this role Calibratable cos-45.6 to capture the Possessor Subject Possessor-Attribute Factoring Alternation. The selectional restriction `scalar' (defined as a quantity, such as mass, length, time, or temperature, which is completely specified by a number on an appropriate scale) ensures the nature of Attribute.
+Beneficiary:	the entity that benefits from some action. Used by such classes asBuild-26.1, Get-13.5.1, Performance-26.7, Preparing-26.3, and Steal-10.5. Generally introduced by the preposition `for', or double object variant in the benefactive alternation.
+Cause:	used mostly by classes involving Psychological Verbs and Verbs Involving the Body.
+Location, Destination, Source:	used for spatial locations.
+Destination:	end point of the motion, or direction towards which the motion is directed. Used with a `to' prepositional phrase by classes of change of location, such as Banish-10.2, and Verbs of Sending and Carrying. Also used as location direct objects in classes where the concept of destination is implicit (and location could not be Source), such as Butter-9.9, or Image impression-25.1.
+Source:	start point of the motion. Usually introduced by a source prepositional phrase (mostly headed by `from' or `out of'). It is also used as a direct object in such classes as Clear-10.3, Leave-51.2, and Wipe instr-10.4.2.
+Location:	underspecified destination, source, or place, in general introduced by a locative or path prepositional phrase.
+Experiencer:	used for a participant that is aware or experiencing something. In VerbNet it is used by classes involving Psychological Verbs, Verbs of Perception, Touch, and Verbs Involving the Body.
+Extent:	used only in the Calibratable-45.6 class, to specify the range or degree of change, as in The price of oil soared (10%)ext. This role may be added to other classes.
+Instrument:	used for objects (or forces) that come in contact with an object and cause some change in them. Generally introduced by a `with' prepositional phrase. Also used as a subject in the Instrument Subject Alternation and as a direct object in the Poke-19 class for the Through/With Alternation and in the Hit-18.1 class for the With/Against Alternation.
+Material and Product:	used in the Build and Grow classes to capture the key semantic components of the arguments. Used by classes from Verbs of Creation and Transformation that allow for the Material/Product Alternation.
+Material:	start point of transformation.
+Product:	end result of transformation.
+Patient:	used for participants that are undergoing a process or that have been affected in some way. Verbs that explicitly (or implicitly) express changes of state have Patient as their usual direct object. We also use Patient1 and Patient2 for some classes of Verbs of Combining and Attaching and Verbs of Separating and Disassembling, where there are two roles that undergo some change with no clear distinction between them.
+Predicate:	used for classes with a predicative complement.
+Recipient:	target of the transfer. Used by some classes of Verbs of Change of Possession, Verbs of Communication, and Verbs Involving the Body. The selection restrictions on this role always allow for animate and sometimes for organization recipients.
+Stimulus:	used by Verbs of Perception for events or objects that elicit some response from an Experiencer. This role usually imposes no restrictions.
+Theme:	used for participants in a location or undergoing a change of location. Also, Theme1 and Theme2 are used for a few classes where there seems to be no distinction between the arguments, such as Differ-23.4 and Exchange-13.6 classes.
+Time:	class-specific role, used in Begin-55.1 class to express time.
+Topic:	topic of communication verbs to handle theme/topic of the conversation or transfer of message. In some cases, like the verbs in the Say-37.7 class, it would seem better to have `Message' instead of `Topic', but we decided not to proliferate the number of roles.
+Each verb argument is assigned one (usually unique) thematic role within the class. A few exceptions to this uniqueness are classes which contain verbs with symmetrical arguments, such as Chitchat-37.6 class, or the ContiguousLocation-47.8 class. These classes have indexed roles such as Actor1 and Actor2, as explained above.
