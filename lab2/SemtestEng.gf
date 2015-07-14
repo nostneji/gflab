@@ -16,19 +16,27 @@ concrete SemtestEng of Semtest = {
     Sound | Spatial | Src | State | Substance | Time | Tool | Vehicle ;
       
   lincat
-    Experiencer, Stimulus, Attribute = { s : Str; r : SemRes } ;
+    Experiencer_R, Stimulus_R, Attribute_R = { s : Str; r : SemRes } ;
   lin
     
-    useExp = { s = "experiencer" | "John" | "Mary"; r = Animate };
-    useStim = { s = "Mary" | "John"; r = Animate };
-    useAttr = { s = "attribute" | "beauty"; r = Abstract };
+    ExpRole = { s = "experiencer" | "John" | "Mary"; r = Animate };
+    StimRole = { s = "Mary" | "John"; r = Animate };
+    AttrRole = { s = "attribute" | "beauty"; r = Abstract };
 
   -- VNC_31_2Eng 
   lincat
     Admire = Str ;
   lin
-    use2pAdmire v exp stim = { s = exp.s!Animate ++ v ++ stim.s } ;
-    use3pAdmire v exp stim attr = { s = exp.s!Animate ++ v ++ stim.s ++ "for" ++ attr.s } ;
+    use2pAdmire v exp stim = { 
+      s = case exp.r of {
+        Animate => exp.s ++ v ++ stim.s ;
+        _ => ""
+      } } ;
+    use3pAdmire v exp stim attr = { 
+      s = case exp.r of { 
+        Animate => exp.s ++ v ++ stim.s ++ "for" ++ attr.s ;
+        _ => ""
+      } } ;
     
     mkAdmire = variants {"abhor";"admire";"adore";"affirm";"applaud";"appreciate";
       "bear";"believe";"bewail";"cherish";"deify";"deplore";"detest";"disbelieve";
@@ -41,7 +49,11 @@ concrete SemtestEng of Semtest = {
   lincat
     Love = Str ;
   lin
-    use2pLove v exp stim = { s = exp.s!Animate ++ v ++ stim.s } ;
+    use2pLove v exp stim = { 
+      s = case exp.r of {
+        Animate => exp.s ++ v ++ stim.s ;
+        _ => ""
+      } } ;
     use2pLoveAsAdmire v = v ;
     
     mkLove = variants {"despise";"disdain";"dislike";"enjoy";"fear";"hate";"like";
