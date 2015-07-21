@@ -1,0 +1,62 @@
+abstract VNLexicon = VNSyntax, VNC_31_2, VNC_31_2_1 ** {
+fun
+  -- Admire_VC
+  abhor_vnV : Admire_VC ;
+  admire_vnV : Admire_VC ;
+  adore_vnV : Admire_VC ;
+  affirm_vnV : Admire_VC ;
+  applaud_vnV : Admire_VC ;
+  appreciate_vnV : Admire_VC ;
+  bear_vnV : Admire_VC ;
+  believe_vnV : Admire_VC ;
+  bewail_vnV : Admire_VC ;
+  cherish_vnV : Admire_VC ;
+  deify_vnV : Admire_VC ;
+  deplore_vnV : Admire_VC ;
+  detest_vnV : Admire_VC ;
+  disbelieve_vnV : Admire_VC ;
+  distrust_vnV : Admire_VC ;
+  dread_vnV : Admire_VC ;
+  envy_vnV : Admire_VC ;
+  esteem_vnV : Admire_VC ;
+  exalt_vnV : Admire_VC ;
+  execrate_vnV : Admire_VC ;
+  fancy_vnV : Admire_VC ;
+  favor_vnV : Admire_VC ;
+  grudge_vnV : Admire_VC ;
+  idolize_vnV : Admire_VC ;
+  lament_vnV : Admire_VC ;
+  loathe_vnV : Admire_VC ;
+  miss_vnV : Admire_VC ;
+  mistrust_vnV : Admire_VC ;
+  mourn_vnV : Admire_VC ;
+  pity_vnV : Admire_VC ;
+  prefer_vnV : Admire_VC ;
+  prize_vnV : Admire_VC ;
+  reaffirm_vnV : Admire_VC ;
+  relish_vnV : Admire_VC ;
+  resent_vnV : Admire_VC ;
+  respect_vnV : Admire_VC ;
+  revere_vnV : Admire_VC ;
+  rue_vnV : Admire_VC ;
+  savor_vnV : Admire_VC ;
+  stand_vnV : Admire_VC ;
+  suffer_vnV : Admire_VC ;
+  support_vnV : Admire_VC ;
+  tolerate_vnV : Admire_VC ;
+  treasure_vnV : Admire_VC ;
+  trust_vnV : Admire_VC ;
+  value_vnV : Admire_VC ;
+  venerate_vnV : Admire_VC ;
+  worship_vnV : Admire_VC ;
+  -- Love_VC
+  despise_vnV : Love_VC ;
+  disdain_vnV : Love_VC ;
+  dislike_vnV : Love_VC ;
+  enjoy_vnV : Love_VC ;
+  fear_vnV : Love_VC ;
+  hate_vnV : Love_VC ;
+  like_vnV : Love_VC ;
+  love_vnV : Love_VC ;
+  regret_vnV : Love_VC ; 
+}
