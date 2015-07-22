@@ -9,7 +9,11 @@ abstract Roles = Cat ** {
     StimRole : NP -> Stimulus_R ;
     AttrRole : NP -> Attribute_R ;
 
+    StimRoleS : S -> Stimulus_R ;
+    
     ExpRoleAsNP : Experiencer_R -> NP ;
     StimRoleAsNP : Stimulus_R -> NP ;
     AttrRoleAsNP : Attribute_R -> NP ;
+    
+    StimRoleAsS : Stimulus_R -> S ;
 }

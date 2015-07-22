@@ -5,9 +5,10 @@ open (C = ConstructorsEng), (P = ParadigmsEng), Constructors in {
   lincat
     Love_VC = Admire_VC ;
   lin
-    mkLove v = v ; --** { vc = "Love_VC" } ; 
+    mkLove v = v ; 
     use2pLove v exp stim = 
       case exp.r of {
+        -- Experiencer V Stimulus <+sc_to_inf> / "I loved to write."
         Animate => C.mkCl (ExpRoleAsNP exp) (P.mkV2 v) (StimRoleAsNP stim) ;
         _ => C.mkCl (P.mkN Predef.nonExist)
       } ;

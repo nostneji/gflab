@@ -5,15 +5,21 @@ open (C = ConstructorsEng), (P = ParadigmsEng), Constructors in {
   lincat
     Admire_VC = VNV ;
   lin
-    mkAdmire v = v ; --** { vc = "Admire_VC" } ;
+    mkAdmire v = v ; 
     use2pAdmire v exp stim = 
       case exp.r of {
-        Animate => C.mkCl (ExpRoleAsNP exp) (P.mkV2 v) (StimRoleAsNP stim) ;
+        -- Experiencer V ( Stimulus | Stimulus <+that_comp> | Stimulus <+be_sc_ing> | Stimulus <+poss_ing> )
+        Animate => (C.mkCl (ExpRoleAsNP exp) (P.mkV2 v) (StimRoleAsNP stim)                 -- "The tourists admired the paintings." / NP V NP
+          | C.mkCl (ExpRoleAsNP exp) (P.mkVS v) (StimRoleAsS stim)                          -- "The children liked that the clown had a red nose." / NP V that S
+          --| C.mkCl (ExpRoleAsNP exp) (P.mkVS v) (StimRoleAsS stim)                          -- "I loved writing." / NP V S_ING
+          --| C.mkCl (ExpRoleAsNP exp) (P.mkVS v) (StimRoleAsS stim)                          -- "I loved him writing novels." / NP V NP S_ING
+          ) ;
         _ => C.mkCl (P.mkN Predef.nonExist)
       } ;
     use3pAdmire v exp stim attr = 
       case exp.r of { 
-        Animate => C.mkCl (ExpRoleAsNP exp) (P.mkV3 (P.partV v "for")) (StimRoleAsNP stim) (AttrRoleAsNP attr) ;
+        -- Experiencer V Stimulus {for} Attribute
+        Animate => C.mkCl (ExpRoleAsNP exp) (P.mkV3 v for_Prep) (StimRoleAsNP stim) (AttrRoleAsNP attr) ;
         _ => C.mkCl (P.mkN Predef.nonExist)
       } ;
     
