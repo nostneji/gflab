@@ -58,8 +58,8 @@ lin
   dislike_vnV = mkLove ( mkVNV ( mkV "dislike") ) ;
   enjoy_vnV = mkLove ( mkVNV ( mkV "enjoy") ) ;
   fear_vnV = mkLove ( mkVNV ( fear_V ) ) ;
-  hate_vnV = mkLove ( mkVNV ( mkV "hate") ) ;
-  like_vnV = mkLove ( mkVNV ( mkV "like") ) ;
-  love_vnV = mkLove ( mkVNV ( mkV "love") ) ;
+  hate_vnV = mkLove ( mkVNV ( hate_V2) ) ;
+  like_vnV = mkLove ( mkVNV ( like_V2 ) ) ;
+  love_vnV = mkLove ( mkVNV ( love_V2 ) ) ;
   regret_vnV = mkLove ( mkVNV ( mkV "regret") ) ;
 }

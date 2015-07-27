@@ -6,6 +6,5 @@ abstract VNSyntax = Cat, Translate ** {
     VNCL ; VNV ;
   fun
     mkVNV : V -> VNV ;
-    mkVNCL : VNV -> VNCL ;
     useVNCL : VNCL -> Cl ;
 }
